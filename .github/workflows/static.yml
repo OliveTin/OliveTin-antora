@@ -2,6 +2,9 @@
 name: Deploy static content to Pages
 
 on:
+  schedule:
+    - cron: '00 23 * * *'
+
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
